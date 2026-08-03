@@ -5,9 +5,9 @@ import json
 import os
 
 # BotFather ကနေ ရလာတဲ့ Token အသစ်ကို ဒီမှာ ထည့်ပါ (ရှေ့က token ကို revoke လုပ်ပြီးသားဖြစ်ရမယ်)
-API_TOKEN = 'ဒီနေရာမှာ_TOKEN_အသစ်_ထည့်ပါ'
+API_TOKEN = os.environ.get('8808444125:AAEN5CuZJCYy5LHTw3iG-4ry2fjT7aSoDUU')
 # @userinfobot ကနေ ရလာတဲ့ ZY ရဲ့ Telegram User ID ဂဏန်း (Report များ ပို့ရန်)
-ADMIN_ID = 123456789
+ADMIN_ID = int(os.environ.get('1087737239'))
 bot = telebot.TeleBot(API_TOKEN)
 
 DATA_FILE = 'profiles.json'
