@@ -7,7 +7,7 @@ import datetime
 
 # ---------------- CONFIG (ဒီနေရာတွေကို ပြင်ပေးပါ) ----------------
 API_TOKEN = 'os.environ.get('BOT_TOKEN')'
-ADMIN_ID = 1087737239  # @userinfobot ကနေ ရလာတဲ့ Admin ID
+ADMIN_ID = int(os.environ.get('ADMIN_ID'))  # @userinfobot ကနေ ရလာတဲ့ Admin ID
 
 KPAY_PHONE = '09798026034'      # KPay/KBZPay လက်ခံမယ့် ဖုန်းနံပါတ်
 KPAY_NAME = 'U ZAY YA'  # Account holder name
