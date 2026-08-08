@@ -1,1 +1,0 @@
-worker: python tarot_bot.py
