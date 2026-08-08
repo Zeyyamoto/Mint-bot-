@@ -7,7 +7,7 @@ import os
 # BotFather ကနေ ရလာတဲ့ Token ကို ဒီမှာ ထည့်ပါ
 API_TOKEN = os.environ.get('BOT_TOKEN')
 # @userinfobot ကနေ ရလာတဲ့ ZY ရဲ့ Telegram User ID ဂဏန်း
-ADMIN_ID = ADMIN_ID = int(os.environ.get('ADMIN_ID'))
+ADMIN_ID = int(os.environ.get('ADMIN_ID'))
 
 # KPay မုန့်ကျွေးရန် အချက်အလက် (ZY ရဲ့ account နံပါတ်/နာမည်ကို ဒီမှာ ပြင်ပါ)
 KPAY_NUMBER = "09798026034"
