@@ -5,12 +5,12 @@ import json
 import os
 
 # BotFather ကနေ ရလာတဲ့ Token ကို ဒီမှာ ထည့်ပါ
-API_TOKEN = 'ဒီနေရာမှာ_TOKEN_ထည့်ပါ'
+API_TOKEN = 'os.environ.get('BOT_TOKEN')'
 # @userinfobot ကနေ ရလာတဲ့ ZY ရဲ့ Telegram User ID ဂဏန်း
-ADMIN_ID = 123456789
+ADMIN_ID = int(os.environ.get('ADMIN_ID'))
 
 # KPay မုန့်ကျွေးရန် အချက်အလက် (ZY ရဲ့ account နံပါတ်/နာမည်ကို ဒီမှာ ပြင်ပါ)
-KPAY_NUMBER = "09xxxxxxxxx"
+KPAY_NUMBER = "09798026034"
 KPAY_NAME = "ZY (Account Name)"
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -66,13 +66,13 @@ CARDS = [
 def main_menu():
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     markup.row(KeyboardButton('🔮 ကတ်ဖွင့်မယ်'))
-    markup.row(KeyboardButton('☕ ဆရာမကို မုန့်ကျွေးမယ်'), KeyboardButton('ℹ️ Bot အကြောင်း'))
+    markup.row(KeyboardButton'☕ ဘယ်သူမုန့်ကျွေးမှာလဲ, KeyboardButton('ℹ️ Bot အကြောင်း'))
     return markup
 
 
 def tip_inline_button():
     markup = InlineKeyboardMarkup()
-    markup.add(InlineKeyboardButton("☕ ဆရာမကို မုန့်ကျွေးမယ် (KPay)", callback_data="tip"))
+    markup.add(InlineKeyboardButton("☕ ဘယ်သူမုန့်ကျွေးမှာလဲ (KPay)", callback_data="tip"))
     return markup
 
 
